@@ -1,0 +1,20 @@
+LYSOSOMAL ENZYME LAB WORKFLOW LOG
+Started: 2026-10-17 11:13:29 PST
+Gene symbol: NEU1
+NCBI protein accession requested: NP_000425.1
+Organism requested: Homo sapiens
+Step 1: R packages rentrez and ggplot2 are available.
+Step 2: Output folders data/, results/, figures/, and logs/ are present.
+Step 3: Requesting FASTA from NCBI Protein via rentrez::entrez_fetch(). 
+NCBI download succeeded. FASTA header: NP_000425.1 sialidase-1 precursor [Homo sapiens] 
+Saved the downloaded sequence to data/NEU1.fasta. 
+Sequence length checked from downloaded FASTA: 415 amino acids. 
+Step 4: Calculated all 20 standard amino-acid counts and percentages. 
+Saved composition table to results/NEU1_amino_acid_counts.csv. 
+Step 5: Scanned the downloaded sequence for N-X-S/T motifs (X is not P). 
+Found 3 potential motifs. 
+Saved motif positions to results/NEU1_motif_positions.csv and summary to results/NEU1_summary.csv. 
+Step 6: Generated Figure 1 at figures/NEU1_amino_acid_composition.png. 
+Step 7: Generated Figure 2 at figures/NEU1_potential_N_glycosylation.png. 
+Step 8: Wrote computed results and lab-question draft to results/NEU1_workflow_report.md. 
+Completed:2026-10-17 11:14:06 PST 
